@@ -10,7 +10,7 @@ const HowItWorks = () => {
       <Navbar/>
 
       <main>
-        {/* Add your “How It Works” content here */}
+        {/* Add “How It Works” content here */}
       </main>
 
      

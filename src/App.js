@@ -5,7 +5,7 @@ import HowItWorks from './pages/how-it-works';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 import Home from './pages/home';
-
+//Main app containing all pages
 const App = () => {
   return (
       <Router>

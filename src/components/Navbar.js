@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
+//Navigation bar to be used across all pages
 const Navbar = () => {
   return (
     <nav className="navbar">
