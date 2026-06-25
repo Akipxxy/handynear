@@ -12,7 +12,7 @@ const Home = () => {
             alert('Please type what you need help with first.');
             return;
         }
-        window.location.href = 'browse.html';
+        window.location.href = '/browse';
     };
 
     return (
@@ -76,7 +76,7 @@ const Home = () => {
                                 <p>Choose your handyman, confirm the booking, and get the job done.</p>
                             </div>
                         </div>
-                        <a href="how-it-works.html" className="btn-outline">Learn More</a>
+                        <a href="/how-it-works" className="btn-outline">Learn More</a>
                     </div>
                 </section>
 
@@ -84,13 +84,13 @@ const Home = () => {
                     <div className="container">
                         <h2>Ready to Get Started?</h2>
                         <p>Join hundreds of homeowners who trust HandyNear for fast, reliable repairs.</p>
-                        <a href="contact.html" className="btn-primary">Post a Job Today</a>
+                        <a href="/contact" className="btn-primary">Post a Job Today</a>
                     </div>
                 </section>
 
             </main>
 
-            <Footer />
+            
         </>
     );
 };
