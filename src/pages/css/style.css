@@ -155,4 +155,8 @@ body {
     .hamburger {
         display: block;
     }
+    .logo img {
+    height: 45px;
+    width: auto;
+    }
 }
