@@ -71,8 +71,8 @@ const Contact = () => {
       <section className="contact-info">
         <h2>Need Help?</h2>
         <p>
-          Reach us at <a href="tel:+254700000000">+254 700 000 000</a> or email{" "}
-          <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>.
+          Reach us at <a href="tel:+254115886800">+254 115 886 800</a> or email{" "}
+          <a href="mailto:support@yourhandyNear.com">support@handyNear.com</a>.
         </p>
       </section>
 
@@ -82,7 +82,7 @@ const Contact = () => {
           deserve.
         </p>
       </footer>
-    </div>c
+    </div>
 
 
       </main>
