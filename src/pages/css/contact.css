@@ -115,6 +115,16 @@ header p {
     background: #1D4ED8;
 }
 
+.form-success {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--success);
+    color: #065F46;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
 /* Contact Info Section */
 .contact-info {
     text-align: center;

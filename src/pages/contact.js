@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/style.css';
 import './css/contact.css';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 //Job posting page
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    e.target.reset();
+  };
+
   return (
     <>
     <Navbar/>
 
       <main>
-   
+
     <div className="contact-page">
       <header>
         <h1>Join Our Network of Skilled Handymen</h1>
@@ -43,36 +50,42 @@ const Contact = () => {
           <li>✅ Secure payments</li>
         </ul>
 
-        <form className="registration-form">
-          <label>
-            Full Name:
-            <input type="text" name="name" required />
-          </label>
+        {submitted ? (
+          <div className="form-success" role="status">
+            <p>🎉 Thanks for registering! We'll be in touch soon with job opportunities in your area.</p>
+          </div>
+        ) : (
+          <form className="registration-form" onSubmit={handleSubmit}>
+            <label>
+              Full Name:
+              <input type="text" name="name" required />
+            </label>
 
-          <label>
-            Phone Number:
-            <input type="tel" name="phone" required />
-          </label>
+            <label>
+              Phone Number:
+              <input type="tel" name="phone" required />
+            </label>
 
-          <label>
-            Email Address:
-            <input type="email" name="email" required />
-          </label>
+            <label>
+              Email Address:
+              <input type="email" name="email" required />
+            </label>
 
-          <label>
-            Skills (e.g., plumbing, painting):
-            <input type="text" name="skills" required />
-          </label>
+            <label>
+              Skills (e.g., plumbing, painting):
+              <input type="text" name="skills" required />
+            </label>
 
-          <button type="submit">Register</button>
-        </form>
+            <button type="submit">Register</button>
+          </form>
+        )}
       </section>
 
       <section className="contact-info">
         <h2>Need Help?</h2>
         <p>
           Reach us at <a href="tel:+254115886800">+254 115 886 800</a> or email{" "}
-          <a href="mailto:support@yourhandyNear.com">support@handyNear.com</a>.
+          <a href="mailto:support@handynear.com">support@handynear.com</a>.
         </p>
       </section>
 
@@ -87,7 +100,7 @@ const Contact = () => {
 
       </main>
 
-     
+
     </>
   );
 };
